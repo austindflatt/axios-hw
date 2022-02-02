@@ -6,10 +6,10 @@ axios.get(URL).then(resp => {
     console.log(resp.data);
 });
 
-async function axios() {
+async function asyncAxios() {
     console.log('asyncResponse');
     let asyncResponse = await axios.get(URL);
     console.log(asyncResponse.data);
 }
 
-axios();
+asyncAxios();
